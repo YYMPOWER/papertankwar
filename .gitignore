@@ -1,0 +1,11 @@
+#Only sync files in Classes and Resources folders
+bin/*
+cocosstudio/*
+config.json
+PaperTankWar.ccs
+PaperTankWar.cfg
+PaperTankWar.udf
+proj.android/*
+proj.ios_mac/*
+proj.win32/*
+
