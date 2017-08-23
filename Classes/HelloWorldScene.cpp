@@ -1,6 +1,7 @@
 #include "HelloWorldScene.h"
 #include "cocostudio/CocoStudio.h"
 #include "ui/CocosGUI.h"
+#include "cocos2d.h"
 
 USING_NS_CC;
 
@@ -84,11 +85,20 @@ bool HelloWorld::init()
         return false;
     }
     
-    auto rootNode = CSLoader::createNode("MainScene.csb");
+    Node * rootNode = CSLoader::createNode("MainScene.csb");
 
     addChild(rootNode);
-    
-    
+    cocos2d::ui::Button * exitButton = (ui::Button*)rootNode->getChildByName("exitButton");
+    exitButton->addClickEventListener(CC_CALLBACK_1(HelloWorld::gameEndCallBack, this));
 
     return true;
+}
+
+//实现游戏结束
+void HelloWorld::gameEndCallBack(cocos2d::Ref* pSender){
+    Director::getInstance()->end();
+    
+#if (CC_TARGET_PLATFORM == CC_PLATFORM_IOS)
+    exit(0);
+#endif
 }

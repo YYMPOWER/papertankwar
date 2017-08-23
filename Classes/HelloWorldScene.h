@@ -14,6 +14,9 @@ public:
 
     // implement the "static create()" method manually
     CREATE_FUNC(HelloWorld);
+    
+    //gameExitCallBack
+    void gameEndCallBack(cocos2d::Ref* pSender);
 };
 
 #endif // __HELLOWORLD_SCENE_H__
