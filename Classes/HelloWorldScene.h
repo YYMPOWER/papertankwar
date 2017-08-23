@@ -17,6 +17,9 @@ public:
     
     //gameExitCallBack
     void gameEndCallBack(cocos2d::Ref* pSender);
+    
+    //转到开始游戏的场景
+    void gameStartCallBack(cocos2d::Ref* pSender);
 };
 
 #endif // __HELLOWORLD_SCENE_H__

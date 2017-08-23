@@ -2,6 +2,7 @@
 #include "cocostudio/CocoStudio.h"
 #include "ui/CocosGUI.h"
 #include "cocos2d.h"
+#include "StartScene.hpp"
 
 USING_NS_CC;
 
@@ -84,13 +85,17 @@ bool HelloWorld::init()
     {
         return false;
     }
-    
+    //得到ui文件
     Node * rootNode = CSLoader::createNode("MainScene.csb");
-
     addChild(rootNode);
+    
+    //得到退出按钮，并实现点击退出游戏
     cocos2d::ui::Button * exitButton = (ui::Button*)rootNode->getChildByName("exitButton");
     exitButton->addClickEventListener(CC_CALLBACK_1(HelloWorld::gameEndCallBack, this));
 
+    //得到开始游戏按钮，并实现点击切换到GameScene场景
+    cocos2d::ui::Button * startButton = (ui::Button*)rootNode->getChildByName("startButton");
+    startButton->addClickEventListener(CC_CALLBACK_1(HelloWorld::gameStartCallBack, this));
     return true;
 }
 
@@ -101,4 +106,9 @@ void HelloWorld::gameEndCallBack(cocos2d::Ref* pSender){
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_IOS)
     exit(0);
 #endif
+}
+
+//实现转换到游戏开始场景
+void HelloWorld::gameStartCallBack(cocos2d::Ref *pSender){
+    Director::getInstance()->replaceScene(TransitionFade::create(2, Start::createScene()));
 }
