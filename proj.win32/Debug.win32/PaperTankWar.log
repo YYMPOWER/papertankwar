@@ -1,0 +1,56 @@
+﻿Build started 2017/8/24 12:52:14.
+     1>Project "E:\Documents\papertankwar\proj.win32\PaperTankWar.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\Cocos\Cocos2d-x\cocos2d-x-3.10\cocos\audio\include" /I"C:\Cocos\Cocos2d-x\cocos2d-x-3.10\external" /I"C:\Cocos\Cocos2d-x\cocos2d-x-3.10\external\chipmunk\include\chipmunk" /I"C:\Cocos\Cocos2d-x\cocos2d-x-3.10\extensions" /I..\Classes /I.. /I"C:\Cocos\Cocos2d-x\cocos2d-x-3.10\cocos\2d\..\..\cocos\editor-support" /I"C:\Cocos\Cocos2d-x\cocos2d-x-3.10\cocos\2d\..\..\cocos" /I"C:\Cocos\Cocos2d-x\cocos2d-x-3.10\cocos\2d\..\..\cocos\platform" /I"C:\Cocos\Cocos2d-x\cocos2d-x-3.10\cocos\2d\..\..\cocos\platform\desktop" /I"C:\Cocos\Cocos2d-x\cocos2d-x-3.10\cocos\2d\..\..\external\glfw3\include\win32" /I"C:\Cocos\Cocos2d-x\cocos2d-x-3.10\cocos\2d\..\..\external\win32-specific\gles\include\OGLES" /I"C:\Cocos\Cocos2d-x\cocos2d-x-3.10\cocos\2d\..\..\external\freetype2\include\win32\freetype2" /I"C:\Cocos\Cocos2d-x\cocos2d-x-3.10\cocos\2d\..\..\external\freetype2\include\win32\\" /I"C:\Cocos\Cocos2d-x\cocos2d-x-3.10\cocos\2d\..\..\external" /ZI /nologo /W3 /WX- /MP /Od /Oy- /D WIN32 /D _WINDOWS /D _USE_MATH_DEFINES /D GL_GLEXT_PROTOTYPES /D CC_ENABLE_CHIPMUNK_INTEGRATION=1 /D COCOS2D_DEBUG=1 /D _CRT_SECURE_NO_WARNINGS /D _SCL_SECURE_NO_WARNINGS /D _VARIADIC_MAX=10 /D _USING_V110_SDK71_ /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug.win32\\" /Fd"Debug.win32\vc120.pdb" /Gd /TP /wd4267 /wd4251 /wd4244 /analyze- /errorReport:prompt ..\Classes\AppDelegate.cpp ..\Classes\LoadScene.cpp ..\Classes\MainMenuScene.cpp ..\Classes\StartScene.cpp main.cpp
+         AppDelegate.cpp
+         LoadScene.cpp
+         MainMenuScene.cpp
+         StartScene.cpp
+         main.cpp
+     1>e:\documents\papertankwar\classes\mainmenuscene.cpp : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+     1>e:\documents\papertankwar\classes\appdelegate.cpp(40): warning C4305: 'argument' : truncation from 'double' to 'float'
+       ResourceCompile:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\bin\rc.exe /D _USING_V110_SDK71_ /D _UNICODE /D UNICODE /l"0x0409" /nologo /fo"Debug.win32\game.res" game.rc 
+       PreLinkEvent:
+         if not exist "E:\Documents\papertankwar\proj.win32\Debug.win32\" mkdir "E:\Documents\papertankwar\proj.win32\Debug.win32\"
+         xcopy /Y /Q "C:\Cocos\Cocos2d-x\cocos2d-x-3.10\prebuilt\win32\*.*" "E:\Documents\papertankwar\proj.win32\Debug.win32\"
+         
+         :VCEnd
+         复制了 60 个文件
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\Documents\papertankwar\proj.win32\Debug.win32\PaperTankWar.exe" /INCREMENTAL /NOLOGO /LIBPATH:E:\Documents\papertankwar\proj.win32\Debug.win32\ /LIBPATH:E:\Documents\papertankwar\proj.win32\Debug.win32\ opengl32.lib glew32.lib libzlib.lib libwebp.lib libiconv.lib freetype.lib winmm.lib ws2_32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\Documents\papertankwar\proj.win32\Debug.win32\PaperTankWar.pdb" /SUBSYSTEM:WINDOWS,"5.01" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\Documents\papertankwar\proj.win32\Debug.win32\PaperTankWar.lib" /MACHINE:X86 /SAFESEH Debug.win32\game.res
+         Debug.win32\AppDelegate.obj
+         Debug.win32\LoadScene.obj
+         Debug.win32\MainMenuScene.obj
+         Debug.win32\StartScene.obj
+         Debug.win32\main.obj
+     1>AppDelegate.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/SAFESEH' specification
+            Creating library E:\Documents\papertankwar\proj.win32\Debug.win32\PaperTankWar.lib and object E:\Documents\papertankwar\proj.win32\Debug.win32\PaperTankWar.exp
+         PaperTankWar.vcxproj -> E:\Documents\papertankwar\proj.win32\Debug.win32\PaperTankWar.exe
+       CustomBuildStep:
+         if not exist "E:\Documents\papertankwar\proj.win32\Debug.win32\" mkdir "E:\Documents\papertankwar\proj.win32\Debug.win32\"
+         xcopy "E:\Documents\papertankwar\proj.win32\..\Resources" "E:\Documents\papertankwar\proj.win32\Debug.win32\" /D /E /I /F /Y
+               
+         :VCEnd
+         E:\Documents\papertankwar\Resources\res\Cross-1.png -> E:\Documents\papertankwar\proj.win32\Debug.win32\res\Cross-1.png
+         E:\Documents\papertankwar\Resources\res\Cross-2.png -> E:\Documents\papertankwar\proj.win32\Debug.win32\res\Cross-2.png
+         E:\Documents\papertankwar\Resources\res\HelloWorld.png -> E:\Documents\papertankwar\proj.win32\Debug.win32\res\HelloWorld.png
+         E:\Documents\papertankwar\Resources\res\LoadingScene-Backgrand.png -> E:\Documents\papertankwar\proj.win32\Debug.win32\res\LoadingScene-Backgrand.png
+         E:\Documents\papertankwar\Resources\res\LoadScene.csb -> E:\Documents\papertankwar\proj.win32\Debug.win32\res\LoadScene.csb
+         E:\Documents\papertankwar\Resources\res\MainMenuScene.csb -> E:\Documents\papertankwar\proj.win32\Debug.win32\res\MainMenuScene.csb
+         E:\Documents\papertankwar\Resources\res\MainScene.csb -> E:\Documents\papertankwar\proj.win32\Debug.win32\res\MainScene.csb
+         E:\Documents\papertankwar\Resources\res\QiTa.png -> E:\Documents\papertankwar\proj.win32\Debug.win32\res\QiTa.png
+         E:\Documents\papertankwar\Resources\res\QuitButton.png -> E:\Documents\papertankwar\proj.win32\Debug.win32\res\QuitButton.png
+         E:\Documents\papertankwar\Resources\res\StartButton.png -> E:\Documents\papertankwar\proj.win32\Debug.win32\res\StartButton.png
+         E:\Documents\papertankwar\Resources\res\StartGame.png -> E:\Documents\papertankwar\proj.win32\Debug.win32\res\StartGame.png
+         E:\Documents\papertankwar\Resources\res\StartScene.csb -> E:\Documents\papertankwar\proj.win32\Debug.win32\res\StartScene.csb
+         E:\Documents\papertankwar\Resources\res\Default\Button_Disable.png -> E:\Documents\papertankwar\proj.win32\Debug.win32\res\Default\Button_Disable.png
+         E:\Documents\papertankwar\Resources\res\Default\Button_Normal.png -> E:\Documents\papertankwar\proj.win32\Debug.win32\res\Default\Button_Normal.png
+         E:\Documents\papertankwar\Resources\res\Default\Button_Press.png -> E:\Documents\papertankwar\proj.win32\Debug.win32\res\Default\Button_Press.png
+         E:\Documents\papertankwar\Resources\res\Default\ImageFile.png -> E:\Documents\papertankwar\proj.win32\Debug.win32\res\Default\ImageFile.png
+         复制了 16 个文件
+     1>Done Building Project "E:\Documents\papertankwar\proj.win32\PaperTankWar.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:12.30
