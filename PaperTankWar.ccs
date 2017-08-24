@@ -3,8 +3,16 @@
   <SolutionFolder>
     <Group ctype="ResourceGroup">
       <RootFolder Name=".">
+        <Image Name="Cross-1.png" />
+        <Image Name="Cross-2.png" />
         <Image Name="HelloWorld.png" />
+        <Image Name="LoadingScene-Backgrand.png" />
+        <Project Name="LoadScene.csd" Type="Scene" />
         <Project Name="MainScene.csd" Type="Scene" />
+        <Image Name="QiTa.png" />
+        <Image Name="QuitButton.png" />
+        <Image Name="StartButton.png" />
+        <Image Name="StartGame.png" />
         <Project Name="StartScene.csd" Type="Scene" />
       </RootFolder>
     </Group>
