@@ -8,12 +8,12 @@
         <Image Name="HelloWorld.png" />
         <Image Name="LoadingScene-Backgrand.png" />
         <Project Name="LoadScene.csd" Type="Scene" />
-        <Project Name="MainScene.csd" Type="Scene" />
+        <Project Name="StartScene.csd" Type="Scene" />
         <Image Name="QiTa.png" />
         <Image Name="QuitButton.png" />
         <Image Name="StartButton.png" />
         <Image Name="StartGame.png" />
-        <Project Name="StartScene.csd" Type="Scene" />
+        <Project Name="MainMenuScene.csd" Type="Scene" />
       </RootFolder>
     </Group>
   </SolutionFolder>

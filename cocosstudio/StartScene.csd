@@ -1,43 +1,60 @@
 <GameFile>
-  <PropertyGroup Name="StartScene" Type="Scene" ID="c98c7cd7-0946-48fa-9e21-f044ca2203b9" Version="3.10.0.0" />
+  <PropertyGroup Name="MainScene" Type="Scene" ID="a2ee0952-26b5-49ae-8bf9-4f1d6279b798" Version="3.10.0.0" />
   <Content ctype="GameProjectContent">
     <Content>
       <Animation Duration="0" Speed="1.0000" />
-      <ObjectData Name="Scene" Tag="13" ctype="GameNodeObjectData">
+      <ObjectData Name="Scene" ctype="GameNodeObjectData">
         <Size X="960.0000" Y="640.0000" />
         <Children>
-          <AbstractNodeData Name="StartGame_1" ActionTag="889473966" Tag="8" IconVisible="False" LeftMargin="2.0000" RightMargin="2.0000" TopMargin="1.0000" BottomMargin="1.0000" ctype="SpriteObjectData">
-            <Size X="956.0000" Y="638.0000" />
+          <AbstractNodeData Name="MainMenuBG" ActionTag="-1288842575" Tag="9" IconVisible="False" PercentWidthEnable="True" PercentHeightEnable="True" PercentWidthEnabled="True" PercentHeightEnabled="True" LeftEage="316" RightEage="316" TopEage="211" BottomEage="211" Scale9OriginX="316" Scale9OriginY="211" Scale9Width="328" Scale9Height="218" ctype="ImageViewObjectData">
+            <Size X="960.0000" Y="640.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
             <Position X="480.0000" Y="320.0000" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition X="0.5000" Y="0.5000" />
-            <PreSize X="0.9958" Y="0.9969" />
-            <FileData Type="Normal" Path="StartGame.png" Plist="" />
-            <BlendFunc Src="1" Dst="771" />
+            <PreSize X="1.0000" Y="1.0000" />
+            <FileData Type="Normal" Path="HelloWorld.png" Plist="" />
           </AbstractNodeData>
-          <AbstractNodeData Name="StartButton_2" ActionTag="-14398408" Tag="9" IconVisible="False" LeftMargin="-4.0900" RightMargin="8.0900" TopMargin="-34.8828" BottomMargin="36.8828" ctype="SpriteObjectData">
-            <Size X="956.0000" Y="638.0000" />
+          <AbstractNodeData Name="TitleImg" ActionTag="-547528471" Tag="10" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" PercentWidthEnable="True" PercentHeightEnable="True" PercentWidthEnabled="True" PercentHeightEnabled="True" LeftMargin="240.0000" RightMargin="240.0000" TopMargin="96.0000" BottomMargin="416.0000" Scale9Width="46" Scale9Height="46" ctype="ImageViewObjectData">
+            <Size X="480.0000" Y="128.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="473.9100" Y="355.8828" />
+            <Position X="480.0000" Y="480.0000" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.4937" Y="0.5561" />
-            <PreSize X="0.9958" Y="0.9969" />
-            <FileData Type="Normal" Path="StartButton.png" Plist="" />
-            <BlendFunc Src="1" Dst="771" />
+            <PrePosition X="0.5000" Y="0.7500" />
+            <PreSize X="0.5000" Y="0.2000" />
+            <FileData Type="Default" Path="Default/ImageFile.png" Plist="" />
           </AbstractNodeData>
-          <AbstractNodeData Name="QuitButton_3" ActionTag="2095201757" Tag="10" IconVisible="False" LeftMargin="15.9676" RightMargin="-11.9676" TopMargin="-3.4214" BottomMargin="5.4214" ctype="SpriteObjectData">
-            <Size X="956.0000" Y="638.0000" />
+          <AbstractNodeData Name="startButton" ActionTag="-1842832052" Tag="11" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" PercentWidthEnable="True" PercentHeightEnable="True" PercentWidthEnabled="True" PercentHeightEnabled="True" LeftMargin="144.0000" RightMargin="624.0000" TopMargin="416.0000" BottomMargin="160.0000" TouchEnable="True" FontSize="36" ButtonText="StartGame" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="16" Scale9Height="14" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+            <Size X="192.0000" Y="64.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="493.9676" Y="324.4214" />
+            <Position X="240.0000" Y="192.0000" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.5145" Y="0.5069" />
-            <PreSize X="0.9958" Y="0.9969" />
-            <FileData Type="Normal" Path="QuitButton.png" Plist="" />
-            <BlendFunc Src="1" Dst="771" />
+            <PrePosition X="0.2500" Y="0.3000" />
+            <PreSize X="0.2000" Y="0.1000" />
+            <TextColor A="255" R="65" G="65" B="70" />
+            <DisabledFileData Type="Default" Path="Default/Button_Disable.png" Plist="" />
+            <PressedFileData Type="Default" Path="Default/Button_Press.png" Plist="" />
+            <NormalFileData Type="Default" Path="Default/Button_Normal.png" Plist="" />
+            <OutlineColor A="255" R="255" G="0" B="0" />
+            <ShadowColor A="255" R="110" G="110" B="110" />
+          </AbstractNodeData>
+          <AbstractNodeData Name="exitButton" ActionTag="-1509538725" Tag="12" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" PercentWidthEnable="True" PercentHeightEnable="True" PercentWidthEnabled="True" PercentHeightEnabled="True" LeftMargin="624.0000" RightMargin="144.0000" TopMargin="416.0000" BottomMargin="160.0000" TouchEnable="True" FontSize="36" ButtonText="ExitGame" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="16" Scale9Height="14" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+            <Size X="192.0000" Y="64.0000" />
+            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+            <Position X="720.0000" Y="192.0000" />
+            <Scale ScaleX="1.0000" ScaleY="1.0000" />
+            <CColor A="255" R="255" G="255" B="255" />
+            <PrePosition X="0.7500" Y="0.3000" />
+            <PreSize X="0.2000" Y="0.1000" />
+            <TextColor A="255" R="65" G="65" B="70" />
+            <DisabledFileData Type="Default" Path="Default/Button_Disable.png" Plist="" />
+            <PressedFileData Type="Default" Path="Default/Button_Press.png" Plist="" />
+            <NormalFileData Type="Default" Path="Default/Button_Normal.png" Plist="" />
+            <OutlineColor A="255" R="255" G="0" B="0" />
+            <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
         </Children>
       </ObjectData>

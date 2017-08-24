@@ -310,4 +310,5 @@ dependencies: \
   /Applications/Cocos/Cocos2d-x/cocos2d-x-3.10/cocos/ui/UIScale9Sprite.h \
   /Applications/Cocos/Cocos2d-x/cocos2d-x-3.10/cocos/ui/UIEditBox/UIEditBox.h \
   /Applications/Cocos/Cocos2d-x/cocos2d-x-3.10/cocos/ui/UILayoutComponent.h \
-  /Applications/Cocos/Cocos2d-x/cocos2d-x-3.10/cocos/editor-support/cocostudio/CocosStudioExtension.h
+  /Applications/Cocos/Cocos2d-x/cocos2d-x-3.10/cocos/editor-support/cocostudio/CocosStudioExtension.h \
+  /Users/enderqiu/Documents/CocosProjects/PaperTankWar/Classes/StartScene.hpp
